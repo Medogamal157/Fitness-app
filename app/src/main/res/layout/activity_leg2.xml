@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFF"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/exersice_5" />
+
+            <TextView
+                android:id="@+id/text_view_countdown"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="135dp"
+                android:background="@drawable/button_bg_round"
+                android:padding="15dp"
+                android:text="01:00 MIN"
+                android:textSize="25sp"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button_reset"
+                android:layout_width="98dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/text_view_countdown"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@+id/button_start_pause"
+                android:background="@drawable/button_bg"
+                android:text="reset"
+                android:textColor="#FFF"
+                android:visibility="invisible"
+                app:backgroundTint="@null" />
+
+            <Button
+                android:id="@+id/button_start_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="Start"
+                android:textColor="#FFF"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
